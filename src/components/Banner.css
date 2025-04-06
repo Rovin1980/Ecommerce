@@ -1,0 +1,67 @@
+/* Banner Styles */
+.banner {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10vh 5vw;
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 52px;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-width: 50%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.banner-content h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: bold;
+}
+
+.banner-content p {
+  color: #e5e7e8;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin: 5px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    padding: 8vh 4vw;
+    margin-top: 0px;
+    margin-left: auto;
+  }
+
+  .banner-content {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 6vh 71%;
+  }
+
+  .banner-content {
+    padding: 0.6rem 1rem;
+  }
+}

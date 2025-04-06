@@ -1,0 +1,63 @@
+/* Category Slider Styling */
+.category-slider {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Category Item Styling */
+.category-item {
+  text-align: center;
+  padding: 10px;
+  width: 150px; /* Default width for items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  background: #fff;
+}
+
+.category-item:hover {
+  transform: scale(1.05); /* Add a hover effect */
+}
+
+/* Category Item Image Styling */
+.category-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a max height for better appearance */
+  object-fit: cover; /* Ensure the image fills the container */
+  border-radius: 10px;
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 768px) {
+  .category-slider {
+    width: 90%; /* Slightly increase width for better spacing */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .category-item {
+    width: 45%; /* Two items per row */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .category-slider {
+    width: 100%; /* Full width for mobile screens */
+    gap: 10px; /* Compact gap */
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+
+  .category-item {
+    width: 100%; /* One item per row */
+    margin: 10px auto; /* Center items */
+  }
+
+  .category-item img {
+    max-height: 120px; /* Reduce the image height for smaller screens */
+  }
+}
