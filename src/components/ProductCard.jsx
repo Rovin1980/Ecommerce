@@ -32,13 +32,13 @@ const ProductCard = ({ product }) => {
 
       {/* Calculate discounted price */}
       <p className="product-price">
-        <s>Original Price: ${product.price}</s>
+        <s>Original Price: <sup>₹</sup>{product.price}</s>
         <span className="discount-price">
           (-10% off)
         </span>
       </p>
       <p className="product-discounted-price">
-        Discounted Price: ${Math.round(product.price * 0.9 * 100) / 100}
+        Discounted Price: <sup>₹</sup>{Math.round(product.price * 0.9 * 100) / 100}
        
       </p>
       <div className="product-actions">
